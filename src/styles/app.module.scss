@@ -1,0 +1,67 @@
+.app {
+  max-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .header {
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4px;
+
+    .headerTitle {
+      color: $statusesGreen;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 140%;
+    }
+
+    .headerInfo {
+      display: flex;
+      align-items: stretch;
+    }
+
+    .headerButton {
+      margin-right: 8px;
+      transition: opacity 0.4s ease-out;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+      }
+
+      img {
+        height: 100%;
+        max-height: 100%;
+        width: auto;
+      }
+    }
+
+    .headerTasksNumber {
+      border-radius: 4px;
+      border: 1px solid $primaryGrey;
+      padding: 1px 6px 2px 6px;
+      display: flex;
+      align-items: center;
+
+      color: $primaryNeutralBlack;
+      text-align: center;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 140%;
+    }
+
+  }
+
+  .tasks {
+    overflow: auto;
+    height: 100%;
+  }
+}
+
+
+
